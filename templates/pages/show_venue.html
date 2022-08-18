@@ -101,7 +101,6 @@ block content %}
   const deleteBtn = document.querySelector("#delete-btn");
   deleteBtn.onclick = function (e) {
     const venueId = e.target.dataset["id"];
-    console.log("The venue ID is: ", venueId);
     fetch("/venues/" + venueId, {
       method: "DELETE",
     }).then(function () {

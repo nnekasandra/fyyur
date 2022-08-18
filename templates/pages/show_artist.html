@@ -74,11 +74,11 @@
 
 <a href="/artists/{{ artist.id }}/edit"><button class="btn btn-primary btn-lg">Edit</button></a>
 
-<!-- <button class="btn btn-primary btn-lg" data-id="{{ artist.id}}" id="delete-btn">Delete</button>
+<button class="btn btn-primary btn-lg" data-id="{{ artist.id}}" id="delete-btn">Delete</button>
 <script>
   const deleteBtn = document.querySelector("#delete-btn");
   deleteBtn.onclick = function (e) {
-    const artistId = e.target.dataset["id"];
+	const artistId = e.target.dataset["id"];
     fetch("/artists/" + artistId, {
       method: "DELETE",
     }).then(function () {
@@ -86,6 +86,6 @@
       item.remove();
     });
   }
-</script> -->
+</script>
 {% endblock %}
 
